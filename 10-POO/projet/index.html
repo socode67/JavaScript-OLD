@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="alert alert--hidden"></div>
+    <header class="header">
+      <p class="welcome">Bienvenue John Doe</p>
+    </header>
+    <main class="app">
+      <div class="solde">
+        <div>
+          <p class="solde__label">Solde actuelle</p>
+          <p class="solde__date">Au <span class="date">03/01/2024</span></p>
+        </div>
+        <p class="solde__value">3800€</p>
+      </div>
+      <!-- MOVEMENTS -->
+      <div class="movements">
+        <div class="movements__row">
+          <div class="movements__type movements__type--deposit">dépôt</div>
+          <div class="movements__value">4 000€</div>
+        </div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawal">retrait</div>
+          <div class="movements__value">-200€</div>
+        </div>
+      </div>
+      <div class="summary">
+        <p class="summary__label">Entrées</p>
+        <p class="summary__value summary__value--in">4000€</p>
+        <p class="summary__label">Sorties</p>
+        <p class="summary__value summary__value--out">200</p>
+      </div>
+      <!-- OPERATION: DEPOSIT -->
+      <div class="operation operation--deposit">
+        <h2>Dépôt</h2>
+        <form class="form form--deposit" name="deposit">
+          <input
+            type="number"
+            step=".01"
+            class="form__input form__input--deposit-amount"
+            name="depositAmount"
+          />
+          <button class="form__btn form__btn--deposit">&rarr;</button>
+          <label class="form__label form__label--deposit">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: withdrawal -->
+      <div class="operation operation--withdrawal">
+        <h2>Retrait</h2>
+        <form class="form form--withdrawal" name="withdrawal">
+          <input
+            type="number"
+            step=".01"
+            class="form__input form__input--withdrawal-amount"
+            name="withdrawalAmout"
+          />
+          <button class="form__btn form__btn--withdrawal">&rarr;</button>
+          <label class="form__label form__label--withdrawal">Amount</label>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
