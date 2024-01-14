@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-box {
+  display: flex;
+  align-items: center;
+}
+
+.result {
+  flex: 1;
+}
+
+.screen,
+.result {
+  height: 20px;
+  border: solid 1px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+.keyboard__btn {
+  height: 65px;
+  width: 65px;
+}
